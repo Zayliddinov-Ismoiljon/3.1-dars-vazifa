@@ -77,25 +77,3 @@
     margin: 0;
     padding: 0;
 }
-
-@media only screen and (max-width:320px){
-    .article__title{
-        width: 100%;
-        max-width: 320px;
-        text-align: center;
-    }
-
-    .article__list{
-        width: 100%;
-        max-width: 320px;
-        display: flex;
-        flex-direction: column; 
-        justify-content: center;
-    }
-
-    .article__item{
-        width: 100%;
-        max-width: 320px;
-    }
-}
-

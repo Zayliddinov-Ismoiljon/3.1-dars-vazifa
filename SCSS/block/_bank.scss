@@ -80,31 +80,3 @@
 .bank__link:hover{
     opacity: 0.4;
 }
-
-@media only screen and (max-width:320px){
-    .bank{
-        width: 100%;
-        max-width: 320px;
-    }
-
-    .bank__about{
-        width: 100%;
-        max-width: 320px;
-        margin-top: 322px;
-        text-align: center;
-    }
-
-    .bank-info::after{
-        top: -567px;
-        left: -27px;
-    }
-
-    .bank__about::after{
-        top: -749px;
-        left: -268px;
-    }
-
-    .bank__title{
-        padding-top: 322px;
-    }
-}

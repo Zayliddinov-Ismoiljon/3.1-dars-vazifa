@@ -85,32 +85,3 @@
 }
 
 
-@media only screen and (max-width:320px){
-    .choose-bank__info{
-        width: 100%;
-        max-width: 320px;
-        text-align: center;
-        margin-bottom: 56px;
-    }
-
-    .choose-bank__list{
-        width: 100%;
-        max-width: 320px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .choose-bank-item{
-        width: 100%;
-        max-width: 320px;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 56px;
-        text-align: center;
-    }
-
-    .choose-bank-item::before{
-        top: 0;
-        left: auto;
-    }
-}
