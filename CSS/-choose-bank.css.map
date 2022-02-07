@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../SCSS/block/-choose-bank.scss"
+    ],
+    "names": [],
+    "file": "-choose-bank.css"
+}

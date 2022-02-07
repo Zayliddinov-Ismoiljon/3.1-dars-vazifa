@@ -1,0 +1,110 @@
+.bank{
+    margin: 0;
+    padding: 170px 0;
+    background-color: #FAFAFA;
+    
+}
+
+.bank-info{
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.bank-info::after{
+    position: absolute;
+    z-index: 2;
+    content: "";
+    background-image: url(../../images/hero-phones-desktop.svg);
+    background-repeat: no-repeat;
+    width: 633px;
+    height: 835px;
+    top: -85px ;
+    right: -230px;
+}
+
+.bank__about{
+    position: relative;
+    z-index: 1;
+    width: 447px;
+    margin: 0;
+    padding: 0;
+}
+
+.bank__about::after{
+    position: absolute;
+    z-index: 2;
+    content: "";
+    background-image: url(../../images/hero-bg-desktop.svg);
+    background-repeat: no-repeat;
+    width: 820px;
+    height: 855px;
+    top: -172px ;
+    left: 527px;
+}
+
+.bank__title{
+    font-family: $main-font-family, sans-serif;
+    font-weight: 100;
+    font-size: 56px;
+    color: #2D314D;
+    margin: 0;
+    padding: 0;
+}
+
+.bank__text{
+    font-family: $main-font-family, sans-serif;
+    font-size: 18px;
+    color: #9597A5;
+    margin-top: 24px;
+    margin-bottom: 36px;
+    padding: 0;
+}
+
+.bank__link{
+    text-decoration: none;
+    font-family: $main-font-family, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    align-items: center;
+    width: 163px;
+    height: 44px;
+    background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+    border-radius: 22px;
+    padding: 8px 33px;
+    margin: 0;
+}
+
+.bank__link:hover{
+    opacity: 0.4;
+}
+
+@media only screen and (max-width:320px){
+    .bank{
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .bank__about{
+        width: 100%;
+        max-width: 320px;
+        margin-top: 322px;
+        text-align: center;
+    }
+
+    .bank-info::after{
+        top: -567px;
+        left: -27px;
+    }
+
+    .bank__about::after{
+        top: -749px;
+        left: -268px;
+    }
+
+    .bank__title{
+        padding-top: 322px;
+    }
+}
