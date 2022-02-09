@@ -7,7 +7,8 @@
     z-index: 3;
 }
 
-.site-header__menu{
+.site-header__menu{ 
+    width: 100%;
     margin: 0;
     padding: 18px 0;
     justify-content: space-between;
@@ -73,10 +74,9 @@
     color: #fff;
     align-items: center;
     width: 163px;
-    height: 44px;
     background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
     border-radius: 22px;
-    padding: 8px 33px;
+    padding: 14px 33px;
     margin: 0;
 }
 
@@ -103,5 +103,33 @@
     background-color: #2D314D;
     text-align: center;
     margin-bottom: 5px;
+}
+
+@media only screen and (max-width:425px){
+    .container{
+        width: 100%;
+        max-width: 375px;
+        padding:22px 20px;
+    }
+
+    .site-header{
+        width: 100%;
+        
+        position: fixed;
+        z-index: 3;
+        background-color: #fff;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .site-header__btn{
+        display: none;
+    }
+
+    .button{
+        display: block;
+    }
 }
 

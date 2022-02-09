@@ -416,9 +416,9 @@ img {
 }
 
 .container {
-  width: 1440px;
+  width: 1150px;
   margin: 0 auto;
-  padding: 0 165px;
+  padding: 0 20px;
 }
 
 .site-header {
@@ -431,6 +431,7 @@ img {
 }
 
 .site-header__menu {
+  width: 100%;
   margin: 0;
   padding: 18px 0;
   -webkit-box-pack: justify;
@@ -509,10 +510,9 @@ img {
       -ms-flex-align: center;
           align-items: center;
   width: 163px;
-  height: 44px;
   background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
   border-radius: 22px;
-  padding: 8px 33px;
+  padding: 14px 33px;
   margin: 0;
 }
 
@@ -543,6 +543,29 @@ img {
   margin-bottom: 5px;
 }
 
+@media only screen and (max-width: 425px) {
+  .container {
+    width: 100%;
+    max-width: 375px;
+    padding: 22px 20px;
+  }
+  .site-header {
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    background-color: #fff;
+  }
+  .nav {
+    display: none;
+  }
+  .site-header__btn {
+    display: none;
+  }
+  .button {
+    display: block;
+  }
+}
+
 .bank {
   margin: 0;
   padding: 170px 0;
@@ -560,12 +583,12 @@ img {
   position: absolute;
   z-index: 2;
   content: "";
-  background-image: url(../../images/hero-phones-desktop.svg);
+  background-image: url(../../images/redmi-telephone.png);
   background-repeat: no-repeat;
-  width: 633px;
-  height: 835px;
-  top: -85px;
-  right: -230px;
+  width: 729px;
+  height: 900px;
+  top: -105px;
+  right: -384px;
 }
 
 .bank__about {
@@ -582,8 +605,8 @@ img {
   content: "";
   background-image: url(../../images/hero-bg-desktop.svg);
   background-repeat: no-repeat;
-  width: 820px;
-  height: 855px;
+  width: 660px;
+  height: 612px;
   top: -172px;
   left: 527px;
 }
@@ -616,15 +639,51 @@ img {
       -ms-flex-align: center;
           align-items: center;
   width: 163px;
-  height: 44px;
   background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
   border-radius: 22px;
-  padding: 8px 33px;
+  padding: 14px 33px;
   margin: 0;
 }
 
 .bank__link:hover {
   opacity: 0.4;
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    width: 100%;
+    max-width: 375px;
+    padding: 0 20px;
+  }
+  .bank-info {
+    padding-top: 322px;
+  }
+  .bank__about::after {
+    width: 100%;
+    background-image: url(../../images/iphone-bg.svg);
+    background-repeat: no-repeat;
+    height: 424px;
+    width: 425px;
+    top: -480px;
+    left: -23px;
+  }
+  .bank-info::after {
+    width: 100%;
+    background-image: url(../../images/iphone-mobile.png);
+    background-repeat: no-repeat;
+    width: 353px;
+    height: 407px;
+    top: -170px;
+    left: -33px;
+  }
+  .bank__about {
+    width: 100%;
+    max-width: 375px;
+    text-align: center;
+  }
+  .bank__title {
+    font-size: 40px;
+  }
 }
 
 .choose-bank {
@@ -671,7 +730,7 @@ img {
   z-index: 1;
   width: 255px;
   margin-right: 30px;
-  padding-top: 112px;
+  padding: 0;
 }
 
 .choose-bank-item::before {
@@ -682,8 +741,7 @@ img {
   background-repeat: no-repeat;
   width: 72px;
   height: 72px;
-  top: 0;
-  left: 0;
+  margin-bottom: 40px;
 }
 
 .choose-bank-item:nth-child(2)::before {
@@ -703,7 +761,7 @@ img {
   font-weight: 100;
   font-size: 24px;
   color: #2D314D;
-  margin: 0;
+  margin-top: 112px;
   padding: 0;
 }
 
@@ -713,6 +771,67 @@ img {
   color: #9597A5;
   margin-top: 26px;
   padding: 0;
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    width: 100%;
+    max-width: 375px;
+    padding: 0 20px;
+  }
+  .choose-bank__info {
+    width: 100%;
+    max-width: 375px;
+    text-align: center;
+  }
+  .choose-bank__list {
+    width: 100%;
+    max-width: 375px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+  .choose-bank-item {
+    width: 100%;
+    max-width: 375px;
+    text-align: center;
+    margin-top: 56px;
+    padding-top: 96px;
+  }
+  .choose-bank-item:nth-child(1) {
+    background-image: url(../../images/online-bank.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+  .choose-bank-item:nth-child(2) {
+    background-image: url(../../images/simple.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+  .choose-bank-item:nth-child(3) {
+    background-image: url(../../images/fast-img.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+  .choose-bank-item:nth-child(4) {
+    background-image: url(../../images/open-img.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+  .choose-bank-heading {
+    margin: 0;
+  }
+  .choose-bank-item::before {
+    display: none;
+  }
 }
 
 .article {
@@ -741,8 +860,8 @@ img {
   width: 255px;
   margin-right: 30px;
   margin-top: 40px;
-  padding-bottom: 24px;
-  border-radius: 10px;
+  padding: 0;
+  border-radius: 5px;
   background-color: #FFFFFF;
 }
 
@@ -753,11 +872,9 @@ img {
 }
 
 .article__info {
-  width: 207px;
+  width: 100%;
   margin-top: 25px;
-  margin-left: 24px;
-  margin-right: 24px;
-  padding: 0;
+  padding: 0 24px 24px 24px;
 }
 
 .article__aforism {
@@ -795,6 +912,37 @@ img {
   color: #9597A5;
   margin: 0;
   padding: 0;
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    width: 100%;
+    max-width: 375px;
+    padding: 0 20px;
+  }
+  .article__title {
+    width: 100%;
+    text-align: center;
+  }
+  .article__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .article__item {
+    width: 100%;
+  }
+  .article__img {
+    width: 100%;
+  }
+  .article__info {
+    width: 100%;
+  }
 }
 
 .site-footer {
@@ -922,10 +1070,9 @@ img {
           align-items: center;
   display: block;
   width: 163px;
-  height: 44px;
   background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
   border-radius: 22px;
-  padding: 8px 33px;
+  padding: 14px 33px;
   margin-left: auto;
 }
 
@@ -937,9 +1084,93 @@ img {
   font-family: "Public Sans", sans-serif;
   font-weight: 100;
   font-size: 15px;
-  color: #9698A6;
+  color: #fff;
+  opacity: 0.5;
   margin-top: 24px;
   margin-left: auto;
   padding: 0;
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    width: 100%;
+    max-width: 375px;
+    padding: 0 20px;
+  }
+  .site-footer__about {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .site-footer__list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+  }
+  .list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .list__item {
+    width: 100%;
+    text-align: center;
+  }
+  .site-footer__item {
+    width: 100%;
+    text-align: center;
+  }
+  .site-footer__item:nth-child(1) {
+    margin-right: 0;
+  }
+  .site-footer__item:nth-child(2) {
+    width: 100%;
+    text-align: center;
+    margin-top: 35px;
+    margin-right: 0;
+  }
+  .site-footer__item:nth-child(3) {
+    width: 100%;
+    text-align: center;
+    margin-top: 35px;
+  }
+  .site-footer__div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 32px;
+  }
+  .site-footer__link3 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .site-footer__text {
+    text-align: center;
+    margin-top: 32px;
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

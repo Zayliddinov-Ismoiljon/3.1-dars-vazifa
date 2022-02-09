@@ -2,7 +2,6 @@
     margin: 0;
     padding: 170px 0;
     background-color: #FAFAFA;
-    
 }
 
 .bank-info{
@@ -10,18 +9,19 @@
     z-index: 1;
     margin: 0;
     padding: 0;
+    
 }
 
 .bank-info::after{
     position: absolute;
     z-index: 2;
     content: "";
-    background-image: url(../../images/hero-phones-desktop.svg);
+    background-image: url(../../images/redmi-telephone.png);
     background-repeat: no-repeat;
-    width: 633px;
-    height: 835px;
-    top: -85px ;
-    right: -230px;
+    width: 729px;
+    height: 900px;
+    top: -105px ;
+    right: -384px;
 }
 
 .bank__about{
@@ -38,8 +38,8 @@
     content: "";
     background-image: url(../../images/hero-bg-desktop.svg);
     background-repeat: no-repeat;
-    width: 820px;
-    height: 855px;
+    width: 660px;
+    height: 612px;
     top: -172px ;
     left: 527px;
 }
@@ -70,13 +70,54 @@
     color: #fff;
     align-items: center;
     width: 163px;
-    height: 44px;
     background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
     border-radius: 22px;
-    padding: 8px 33px;
+    padding: 14px 33px;
     margin: 0;
 }
 
 .bank__link:hover{
     opacity: 0.4;
 }
+
+@media only screen and (max-width:425px){
+    .container{
+        width: 100%;
+        max-width: 375px;
+        padding: 0 20px;
+    }
+
+    .bank-info{
+        padding-top: 322px;
+    }
+
+    .bank__about::after{
+        width: 100%;
+        background-image: url(../../images/iphone-bg.svg);
+        background-repeat: no-repeat;
+        height: 424px;
+        width: 425px;
+        top: -480px;
+        left: -23px;
+    }
+
+    .bank-info::after{
+        width: 100%;
+        background-image: url(../../images/iphone-mobile.png);
+        background-repeat: no-repeat;
+        width: 353px;
+        height: 407px;
+        top: -170px;
+        left: -33px;
+    }
+
+    .bank__about{
+        width: 100%;
+        max-width: 375px;
+        text-align: center;
+    }
+
+    .bank__title{
+        font-size: 40px;
+    }
+} 

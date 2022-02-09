@@ -22,8 +22,8 @@
     width: 255px;
     margin-right: 30px;
     margin-top: 40px;
-    padding-bottom: 24px;
-    border-radius: 10px;
+    padding: 0;
+    border-radius: 5px;
     background-color: #FFFFFF;
 }
 
@@ -34,11 +34,9 @@
 }
 
 .article__info{
-    width: 207px;
+    width: 100%;
     margin-top: 25px;
-    margin-left: 24px;
-    margin-right: 24px;
-    padding: 0;
+    padding: 0 24px 24px 24px;
 }
 
 .article__aforism{
@@ -76,4 +74,35 @@
     color: #9597A5;
     margin: 0;
     padding: 0;
+}
+
+@media only screen and (max-width:425px){
+    .container{
+        width: 100%;
+        max-width: 375px;
+        padding: 0 20px;
+    }
+
+    .article__title{
+        width: 100%;
+        text-align: center;
+    }
+
+    .article__list{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .article__item{
+        width: 100%;
+    }
+
+    .article__img{
+        width: 100%;
+    }
+
+    .article__info{
+        width: 100%;
+    }
 }
